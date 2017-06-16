@@ -3,6 +3,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const app = express();
+const port = process.env.PORT || 8080;
 
 mongoose.connect('mongodb://localhost/test');
 mongoose.Promise = global.Promise;
@@ -10,8 +11,6 @@ mongoose.Promise = global.Promise;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../client/build')));
-
-const port = 3001;
 
 const schema = new mongoose.Schema({title: 'string', content: 'string' });
 const Post = mongoose.model('Post', schema);
