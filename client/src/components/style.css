@@ -1,0 +1,71 @@
+
+div {
+  display: block;
+}
+
+ul {
+  display: block;
+  -webkit-padding-start: 0px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 80px;
+  padding: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.editor-wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.post-item {
+  padding: 15px 15px;
+  height: 30px;
+  margin: auto;
+  font-size: 16px;
+  display: block;
+  border: solid 1px #ddd;
+}
+
+
+.add {
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  padding: 10px 32px;
+}
+
+.submit {
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  padding: 10px 32px;
+  border: none;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
